@@ -1,0 +1,182 @@
+{
+    "assessment": [
+        {
+            "id": 1,
+            "label": "Testing",
+            "date": "2018-01-01"
+        }
+    ],
+    "detail": [
+        {
+            "id": 1,
+            "assessment_id": 1,
+            "company": {
+                "name": "Company A"
+            },
+            "user": {
+                "name": "User 1",
+                "email": "bla@foo.bar"
+            },
+            "approved_by": {
+                "id": "dklsd88",
+                "name": "ksldk",
+                "email": "dsdsd"
+            },
+            "question": {
+                "id": 1,
+                "number": 1,
+                "question": "Do you maintain an inventory of personal data holdings?",
+                "article": "30,40,15",
+                "explanation": "(what personal data is held and where)\nEach Controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility.\nEach Processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller.",
+                "recommendation": "",
+                "type": {
+                    "id": 1,
+                    "name": "Basic",
+                    "answers": [
+                        {
+                            "id": 1,
+                            "name": "Yes",
+                            "score": 1
+                        },
+                        {
+                            "id": 2,
+                            "name": "No",
+                            "score": 0
+                        },
+                        {
+                            "id": 3,
+                            "name": "Not Sure",
+                            "score": 0
+                        }
+                    ]
+                },
+                "domain": {
+                    "id": 3,
+                    "name": "Policy"
+                }
+            },
+            "answer": {
+                "id": 1,
+                "name": "Yes",
+                "score": 1
+            },
+            "notes": "Lorem ipsum",
+            "evidence": false
+        }
+    ],
+    "question": [
+        {
+            "id": 1,
+            "number": 1,
+            "question": "Do you maintain an inventory of personal data holdings?",
+            "article": "30",
+            "explanation": "(what personal data is held and where)\nEach Controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility.\nEach Processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller.",
+            "recommendation": "",
+            "type": {
+                "id": 1,
+                "name": "Basic",
+                "answers": [
+                    {
+                        "id": 1,
+                        "name": "Yes",
+                        "score": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "No",
+                        "score": 0
+                    },
+                    {
+                        "id": 3,
+                        "name": "Not Sure",
+                        "score": 0
+                    }
+                ]
+            },
+            "domain": {
+                "id": 3,
+                "name": "Policy"
+            },
+            "answered": true
+        },
+        {
+            "id": 2,
+            "number": 2,
+            "question": "Do you know what data you hold ?",
+            "article": "30",
+            "explanation": "(what personal data is held and where)\nEach Controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility.\nEach Processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller.",
+            "recommendation": "",
+            "type": {
+                "id": 1,
+                "name": "Basic",
+                "answers": [
+                    {
+                        "id": 1,
+                        "name": "Yes",
+                        "score": 1
+                    },
+                    {
+                        "id": 2,
+                        "name": "No",
+                        "score": 0
+                    },
+                    {
+                        "id": 3,
+                        "name": "Not Sure",
+                        "score": 0
+                    }
+                ]
+            },
+            "domain": {
+                "id": 3,
+                "name": "Policy"
+            },
+            "answered": true
+        }
+    ],
+    "question-domain": [
+        {
+            "id": 1,
+            "name": "Governance & Policy",
+            "parent": null,
+            "children": [
+                {
+                    "id": 2,
+                    "name": "Governance"
+                },
+                {
+                    "id": 3,
+                    "name": "Policy"
+                }
+            ],
+            "question_count": 1
+        },
+        {
+            "id": 3,
+            "name": "Policy",
+            "parent": {
+                "id": 1,
+                "name": "Governance & Policy"
+            },
+            "children": [],
+            "question_count": 0
+        }
+    ],
+    "article": [
+        {
+            "id": 30,
+            "subject": "A subject",
+            "content": "Long content"
+        },
+        {
+            "id": 40,
+            "subject": "Article 2",
+            "content": "Long long content"
+        },
+        {
+            "id": 15,
+            "subject": "Article 2",
+            "content": "Long long text"
+        }
+    ]
+}
